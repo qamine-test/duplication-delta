@@ -29,3 +29,14 @@ function initialize() {
 	layer.fitBounds(paper.view.bounds);
 }
 
+var paper = require('paper');
+paper.setup(new paper.Canvas(1024, 768));
+
+var layer = paper.project.activeLayer;
+
+var values = {
+	count: 34,
+	points: 32
+};
+
+initialize();
